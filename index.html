@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>John Doe Photography</title>
+    <meta name="description"
+        content="Découvrez le portfolio de John Doe, photographe professionnel spécialisé en nature, événements et portraits. Des images uniques pour capturer vos plus beaux moments.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>John Doe's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallerie</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <button data-theme-toggler></button>
+        <section class="slider">
+            <p>Zone slider (à enrichir avec JavaScript)</p>
+        </section>
+
+        <section class="about">
+            <p>John Doe est un photographe passionné qui capture des images de la nature, des événements et des
+                personnes.</p>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="gallery-item">
+                <img class="image" src="assets/images/palmiers.jpg" alt="Palmiers au pied d’un immeuble">
+                <p>Des palmiers pour un voyage haut en couleurs.</p>
+            </div>
+            <div class="gallery-item">
+                <img class="image" src="assets/images/drapeau-coucher-soleil.jpg"
+                    alt="Drapeau en silhouette au coucher du soleil">
+                <p>Un coucher de soleil sur une nation flamboyante.</p>
+            </div>
+            <div class="gallery-item">
+                <img class="image" src="assets/images/rocher-vagues.jpg" alt="Roche noire frappée par les vagues">
+                <p>La mer comme seul horizon.</p>
+            </div>
+            <div class="gallery-item">
+                <img class="image" src="assets/images/vue-aerienne-rivage.jpg" alt="Vue aérienne d’un rivage rocheux">
+                <p>La mer comme grande source d'inspiration.</p>
+            </div>
+        </section>
+
+        <section id="modal" class="hidden">
+            <div id="modalContent">
+                <button id="closeModal">✖</button>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Services</h2>
+            <p>John Doe propose une gamme de services :</p>
+            <ul>
+                <li id="nature">Photographie de la nature</li>
+                <li id="evenement">Photographie d'événements</li>
+                <li id="portrait">Portraits</li>
+                <li id="retouche">Retouche photo</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Email : john@photography.com</p>
+            <p>Téléphone : 123-456-7890</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 John Doe Photography</p>
+    </footer>
+
+    <script src="assets/script/lightOrDark.js"></script>
+    <script src="assets/script/modal.js"></script>
+    <script src="assets/script/service.js"></script>
+</body>
+
+</html>
