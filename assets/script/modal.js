@@ -1,7 +1,6 @@
 const images = document.querySelectorAll(".image");
 const modal = document.querySelector("#modal");
 const modalContent = document.querySelector("#modalContent");
-const closeModal = document.querySelector("#closeModal");
 
 function showModal(event) {
     modal.classList.remove("hidden");
@@ -23,7 +22,7 @@ for (image of images) {
     image.addEventListener("click", showModal);
 }
 
-closeModal.addEventListener('click', () => {
+modal.addEventListener('click', () => {
     modal.classList.remove("show");
     modal.classList.add("hidden");
 })

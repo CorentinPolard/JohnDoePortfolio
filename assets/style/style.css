@@ -25,6 +25,17 @@ footer {
     text-align: center;
 }
 
+/* Style de la navBar */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-text-color)
+}
 
 /* Style du slide */
 .slider {
@@ -59,17 +70,7 @@ footer {
     right: 0;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--primary-text-color)
-}
-
+/* Style du main */
 main {
     padding: 20px;
 }
@@ -100,6 +101,7 @@ section.gallery {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.2s ease-out;
 }
 
 .gallery-item:hover {
@@ -113,12 +115,21 @@ section.gallery {
     border-radius: 4px;
 }
 
+section.services ul {
+    padding-left: 20px;
+}
+
+.services ul li {
+    cursor: pointer;
+}
+
 /* Style du Modal */
 #modalContent {
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    width: 100%
+    width: 100%;
+    animation: grow 0.5s ease-in;
 }
 
 .hidden {
@@ -138,10 +149,12 @@ section.gallery {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-section.services ul {
-    padding-left: 20px;
-}
+@keyframes grow {
+    0% {
+        transform: scale(0);
+    }
 
-.services ul li {
-    cursor: pointer;
+    100% {
+        transform: scale(1);
+    }
 }
