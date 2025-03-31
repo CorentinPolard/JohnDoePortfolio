@@ -21,7 +21,7 @@ body {
 header,
 footer {
     background-color: var(--second-bg-color);
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     text-align: center;
 }
 
@@ -122,6 +122,10 @@ section.services ul {
 .services ul li {
     cursor: pointer;
 }
+
+/* .details {
+    transform: rotate(90);
+} */
 
 /* Style du Modal */
 #modalContent {
