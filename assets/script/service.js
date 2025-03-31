@@ -23,9 +23,9 @@ function showDesc() {
 }
 
 nature.addEventListener('click', showDesc);
-nature.addEventListener('click', showDesc);
-nature.addEventListener('click', showDesc);
-nature.addEventListener('click', showDesc);
+evenement.addEventListener('click', showDesc);
+portrait.addEventListener('click', showDesc);
+retouche.addEventListener('click', showDesc);
 
 // nature.addEventListener('click', () => {
 //     let desc = document.querySelector("#natureDesc");
